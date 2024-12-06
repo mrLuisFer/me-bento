@@ -14,7 +14,7 @@ export default function CardLogo({ children, className }: CardLogoProps) {
   const handleMouseEnter = () => {
     timeRef.current = window.setTimeout(() => {
       setHovered(true);
-    }, 2000);
+    }, 1500);
   };
 
   const handleMouseLeave = () => {
