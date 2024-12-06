@@ -25,20 +25,15 @@ export default function Link({
         ? {
             asChild: true,
             ...buttonProps,
-            className: buttonProps?.className,
+            className: clsx(
+              className,
+              buttonProps?.className,
+              "text-wrap text-sm filter transition-all active:scale-95",
+            ),
           }
         : {})}
     >
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href={href}
-        // className={`text-wrap text-sm filter transition-all active:scale-95 ${className}`}
-        className={clsx(
-          className,
-          "text-wrap text-sm filter transition-all active:scale-95",
-        )}
-      >
+      <a target="_blank" rel="noopener noreferrer" href={href}>
         {children}
       </a>
     </Container>
