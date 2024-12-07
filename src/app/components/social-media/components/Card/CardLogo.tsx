@@ -26,7 +26,7 @@ export default function CardLogo({ children, className }: CardLogoProps) {
     <div
       className={clsx(
         className,
-        "inline-block w-fit rounded-xl p-2 text-3xl filter transition-all hover:brightness-105 active:scale-95",
+        "inline-block w-fit rounded-xl p-2 text-2xl filter transition-all hover:brightness-105 active:scale-95",
         hovered && "rotate-180 transform",
       )}
       onMouseEnter={handleMouseEnter}

@@ -1,4 +1,4 @@
-import { SocialMediaLinks } from "../../../../constants/socialMedia";
+import { SocialMediaLinks } from "@/constants/socialMedia.ts";
 import GitHubCalendar, { Activity } from "react-github-calendar";
 import GithubIcon from "../../Icons/GithubIcon";
 import Card from "./Card";

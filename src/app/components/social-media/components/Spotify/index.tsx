@@ -1,7 +1,6 @@
 import SpotifyIcon from "@/app/components/Icons/SpotifyIcon";
 import Card from "../Card";
 import CardLogo from "../Card/CardLogo";
-import ProfileInfo from "./components/ProfileInfo";
 import Track from "./components/Track";
 import Link from "@/app/components/Link";
 import { SocialMediaLinks } from "@/constants/socialMedia";
@@ -24,7 +23,6 @@ export default function Spotify() {
           Play
         </Link>
       </div>
-      <ProfileInfo />
       <Track />
     </Card>
   );

@@ -56,9 +56,8 @@ export const CustomDragLayer: FC<CustomDragLayerProps> = (props) => {
     }
   }
 
-  if (!isDragging) {
-    return null;
-  }
+  if (!isDragging) return null;
+
   return (
     <div className="pointer-events-none fixed left-0 top-0 z-[100] h-full w-full">
       <div

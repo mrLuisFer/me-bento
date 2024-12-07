@@ -15,8 +15,6 @@ export default function VideoCard({
   width,
   height,
 }: VideoImgProps) {
-  return <></>;
-
   return (
     <Card className="bg-gradient-to-t from-neutral-200 to-neutral-100">
       <iframe

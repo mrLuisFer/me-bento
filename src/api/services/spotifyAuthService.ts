@@ -26,7 +26,7 @@ export async function fetchAccessToken(): Promise<string> {
     );
 
     if (response.status !== 200) {
-      throw new Error("Failed to get access token");
+       new Error("Failed to get access token");
     }
     accessToken = response.data.access_token as string;
     return accessToken;

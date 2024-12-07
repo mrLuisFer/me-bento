@@ -1,17 +1,3 @@
-// <GitHub />
-//     <Twitter />
-//     <ImgCard src={masterRoshiImg} alt="Maestro Roshi" />
-//     <Portfolio />
-//     <Spotify />
-//     <VideoCard
-//       src="https://www.youtube.com/embed/rR4n-0KYeKQ?si=zuuDPVVcnqBtyJXa"
-//       title="how we write/review code in big tech companies"
-//       height={280}
-//       width={440}
-//     />
-//     <LinkedIn />
-//     <DevTo />
-
 import GitHub from "./components/GitHub";
 import ImgCard from "./components/ImgCard";
 import Twitter from "./components/Twitter";
