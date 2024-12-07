@@ -1,5 +1,5 @@
 import TwitterIcon from "../../../Icons/TwitterIcon";
-import { SocialMediaLinks } from "@/constants/socialMediaLinks";
+import { SocialMediaLinks } from "@/constants/socialMedia";
 import CardLogo from "../Card/CardLogo";
 import Card from "../Card";
 import TwitterContent from "./Content";
@@ -7,7 +7,7 @@ import Link from "@/app/components/Link";
 
 export default function Twitter() {
   return (
-    <Card className="bg-gradient-to-tl from-blue-100 to-blue-200">
+    <Card className="h-[355px] w-[400px] bg-gradient-to-tl from-blue-100 to-blue-200">
       <CardLogo className="bg-white hover:bg-blue-50">
         <TwitterIcon />
       </CardLogo>

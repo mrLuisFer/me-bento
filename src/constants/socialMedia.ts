@@ -7,3 +7,14 @@ export enum SocialMediaLinks {
   Spotify = "https://open.spotify.com/user/lolesuncrak",
   SpotifyDefaultTrack = "https://open.spotify.com/track/4lriIG2vNqwDWzOj2I9rtj",
 }
+
+export enum SocialMediaNames {
+  Github = "github",
+  Twitter = "twitter",
+  ImgCard = "imgcard",
+  Portfolio = "portfolio",
+  Spotify = "spotify",
+  VideoCard = "videocard",
+  LinkedIn = "linkedin",
+  DevTo = "devto",
+}

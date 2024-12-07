@@ -20,8 +20,9 @@ export default function Artist({ artist }: ArtistProps) {
   return (
     <Link
       href={data?.external_urls.spotify ?? ""}
-      className="flex items-center gap-1 rounded-lg p-1 transition hover:bg-green-200 active:scale-95"
+      className="flex items-center gap-1"
       buttonProps={{ title: `Escuchar a ${artist.name} en Spotify` }}
+      linkClassName="flex items-center gap-1 hover:bg-green-200 rounded-lg p-1 transition filter active:scale-95"
     >
       <Img
         src={data?.images[2].url ?? ""}

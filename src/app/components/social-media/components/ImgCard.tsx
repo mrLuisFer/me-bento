@@ -8,7 +8,7 @@ type SingleImgProps = {
 
 export default function ImgCard({ src, alt }: SingleImgProps) {
   return (
-    <Card className="bg-gradient-to-bl from-neutral-900 to-neutral-950">
+    <Card className="h-[271px] bg-gradient-to-bl from-neutral-900 to-neutral-950">
       <Img src={src} alt={alt} containerClassName="w-80" />
     </Card>
   );

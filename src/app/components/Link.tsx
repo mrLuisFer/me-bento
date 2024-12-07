@@ -8,6 +8,7 @@ type LinkProps = {
   className?: string;
   withButton?: boolean;
   buttonProps?: ButtonProps;
+  linkClassName?: string;
 };
 
 export default function Link({
@@ -16,6 +17,7 @@ export default function Link({
   className,
   withButton = false,
   buttonProps,
+  linkClassName,
 }: LinkProps) {
   const Container = withButton ? Button : Fragment;
 
@@ -33,7 +35,12 @@ export default function Link({
           }
         : {})}
     >
-      <a target="_blank" rel="noopener noreferrer" href={href}>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href={href}
+        className={linkClassName}
+      >
         {children}
       </a>
     </Container>

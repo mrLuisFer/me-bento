@@ -1,4 +1,4 @@
-import { SocialMediaLinks } from "../../../../constants/socialMediaLinks";
+import { SocialMediaLinks } from "../../../../constants/socialMedia";
 import GitHubCalendar, { Activity } from "react-github-calendar";
 import GithubIcon from "../../Icons/GithubIcon";
 import Card from "./Card";
@@ -24,7 +24,7 @@ const getTransformedData = (contributions: Activity[]) => {
 
 export default function GitHub() {
   return (
-    <Card className="w-[278px] max-w-96 bg-gradient-to-bl from-[#1a2029] to-neutral-800 text-white">
+    <Card className="h-[251px] w-[278px] max-w-96 bg-gradient-to-bl from-[#1a2029] to-neutral-800 text-white">
       <CardLogo className="bg-neutral-900">
         <GithubIcon />
       </CardLogo>
