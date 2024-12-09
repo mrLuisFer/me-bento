@@ -11,7 +11,7 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <IconContext.Provider value={{}}>
         <TooltipProvider>
-          <main className="grid max-h-screen w-full grid-cols-[300px_1fr] overflow-hidden bg-white py-0 pl-10">
+          <main className="grid max-h-screen w-full overflow-hidden bg-white py-0 pl-10 md:grid-cols-[200px_1fr] lg:grid-cols-[300px_1fr]">
             <Profile />
             <SocialMedia />
           </main>

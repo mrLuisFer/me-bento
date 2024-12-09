@@ -16,12 +16,12 @@ export default function VideoCard({
   height,
 }: VideoImgProps) {
   return (
-    <Card className="bg-gradient-to-t from-neutral-200 to-neutral-100">
+    <Card className="w-fit bg-gradient-to-t from-neutral-200 to-neutral-100">
       <iframe
         width={width}
         height={height}
         src={src}
-        className={`select-none border-none rounded-xl ${className}`}
+        className={`select-none rounded-xl border-none ${className}`}
         title={title}
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -1,9 +1,9 @@
 import { SpotifyArtist } from "@/types/spotify";
 import { useQuery } from "@tanstack/react-query";
 import spotify from "@/api/services/spotifyServices";
-import Img from "@/app/components/Img";
 import Link from "@/app/components/Link";
 import { Skeleton } from "@/components/ui/skeleton";
+import Img from "@/app/components/Img";
 
 type ArtistProps = {
   artist: SpotifyArtist;
@@ -22,7 +22,7 @@ export default function Artist({ artist }: ArtistProps) {
       href={data?.external_urls.spotify ?? ""}
       className="flex items-center gap-1"
       buttonProps={{ title: `Escuchar a ${artist.name} en Spotify` }}
-      linkClassName="flex items-center gap-1 hover:bg-green-200 rounded-lg p-1 transition filter active:scale-95"
+      linkClassName="flex items-center gap-1 hover:bg-green-300 rounded-lg p-1 transition filter active:scale-95"
     >
       <Img
         src={data?.images[2].url ?? ""}

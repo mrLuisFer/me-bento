@@ -8,7 +8,7 @@ import { FaPlay } from "react-icons/fa";
 
 export default function Spotify() {
   return (
-    <Card className="h-[501px] w-80 bg-gradient-to-br from-green-200 to-green-50">
+    <Card className="h-fit w-80 bg-gradient-to-br from-green-200 to-green-50">
       <div className="flex w-full items-center justify-between gap-2">
         <CardLogo className="bg-white">
           <SpotifyIcon />
