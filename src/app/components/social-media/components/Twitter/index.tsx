@@ -1,4 +1,4 @@
-import TwitterIcon from "../../../Icons/TwitterIcon";
+import TwitterIcon from "@/app/components/icons/TwitterIcon";
 import { SocialMediaLinks } from "@/constants/socialMedia";
 import CardLogo from "../Card/CardLogo";
 import Card from "../Card";

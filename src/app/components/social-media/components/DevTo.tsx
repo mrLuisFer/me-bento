@@ -1,4 +1,4 @@
-import DevToIcon from "../../Icons/DevToIcon";
+import DevToIcon from "@/app/components/icons/DevToIcon";
 import Card from "./Card";
 import CardLogo from "./Card/CardLogo";
 import Img from "../../Img";

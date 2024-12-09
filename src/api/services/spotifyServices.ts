@@ -2,7 +2,7 @@ import {
   SpotifyArtistResponse,
   SpotifyTrack,
   SpotifyUser,
-} from "@/types/Spotify";
+} from "@/types/spotify";
 import spotifyApiClient from "../clients/spotifyApiClient";
 
 export class Spotify {

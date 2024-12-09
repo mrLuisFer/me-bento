@@ -1,4 +1,4 @@
-import { SpotifyArtist } from "@/types/Spotify";
+import { SpotifyArtist } from "@/types/spotify";
 import { useQuery } from "@tanstack/react-query";
 import spotify from "@/api/services/spotifyServices";
 import Img from "@/app/components/Img";

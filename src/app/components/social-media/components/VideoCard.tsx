@@ -21,7 +21,7 @@ export default function VideoCard({
         width={width}
         height={height}
         src={src}
-        className={`select-none rounded-xl ${className}`}
+        className={`select-none border-none rounded-xl ${className}`}
         title={title}
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

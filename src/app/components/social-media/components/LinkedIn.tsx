@@ -1,4 +1,4 @@
-import LinkedInIcon from "../../Icons/LinkedIn";
+import LinkedInIcon from "@/app/components/icons/LinkedIn";
 import Card from "./Card";
 import CardLogo from "./Card/CardLogo";
 import Img from "../../Img";

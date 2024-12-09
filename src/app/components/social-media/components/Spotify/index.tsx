@@ -1,4 +1,4 @@
-import SpotifyIcon from "@/app/components/Icons/SpotifyIcon";
+import SpotifyIcon from "@/app/components/icons/SpotifyIcon";
 import Card from "../Card";
 import CardLogo from "../Card/CardLogo";
 import Track from "./components/Track";

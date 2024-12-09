@@ -1,4 +1,4 @@
-import { SpotifyImage } from "@/types/Spotify";
+import { SpotifyImage } from "@/types/spotify";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
