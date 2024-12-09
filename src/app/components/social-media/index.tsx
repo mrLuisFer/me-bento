@@ -8,7 +8,7 @@ export default function SocialMedia() {
 
   if (isDesktop) return <DragAndDrop />;
   return (
-    <div className="flex h-screen flex-col items-start gap-4 overflow-y-scroll pl-2">
+    <div className="flex h-screen flex-col items-start gap-4 overflow-y-scroll pl-2 pt-8">
       {Object.keys(socialMediaComponents).map((component) => (
         <div key={component}>
           {socialMediaComponents[component as SocialMediaNames]}

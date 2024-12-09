@@ -14,7 +14,7 @@ export default function Portfolio() {
       <Img
         src={portfolioGif}
         alt="Preview de mi portafolio"
-        className="rounded-xl object-cover"
+        className="w-[430px] rounded-xl object-cover lg:w-full"
       />
       <Link
         href={SocialMediaLinks.Portfolio}

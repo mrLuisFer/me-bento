@@ -8,11 +8,15 @@ import devToProfile from "@/assets/images/devto-profile.png";
 
 export default function DevTo() {
   return (
-    <Card className="h-fit w-fit bg-gradient-to-br from-[#302d46] to-[#191825] md:w-[305px]">
+    <Card className="h-fit w-fit bg-gradient-to-br from-[#302d46] to-[#191825] lg:w-[305px]">
       <CardLogo className="bg-black">
         <DevToIcon />
       </CardLogo>
-      <Img src={devToProfile} alt="Luis Alvarez Dev.to Profile" />
+      <Img
+        src={devToProfile}
+        alt="Luis Alvarez Dev.to Profile"
+        className="w-[430px] lg:w-full"
+      />
       <Link
         withButton
         href={SocialMediaLinks.DevTo}
