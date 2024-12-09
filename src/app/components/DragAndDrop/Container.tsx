@@ -11,16 +11,15 @@ interface BoxMap {
 }
 
 const initialSocialMediaBoxesState: BoxMap = {
-  a: { id: 1, title: SocialMediaNames.Github, top: 358, left: 534 },
-  b: { id: 2, title: SocialMediaNames.Twitter, top: 27, left: 516 },
-  c: { id: 3, title: SocialMediaNames.ImgCard, top: 541, left: 944 },
-  d: { id: 4, title: SocialMediaNames.Portfolio, top: 369, left: 12 },
+  a: { id: 1, title: SocialMediaNames.Github, top: 361, left: 532 },
+  b: { id: 2, title: SocialMediaNames.Twitter, top: 19, left: 509 },
+  c: { id: 3, title: SocialMediaNames.ImgCard, top: 490, left: 942 },
+  d: { id: 4, title: SocialMediaNames.Portfolio, top: 359, left: 94 },
   e: { id: 5, title: SocialMediaNames.Spotify, top: 7, left: 948 },
-  f: { id: 6, title: SocialMediaNames.VideoCard, top: 684, left: 28 },
-  g: { id: 7, title: SocialMediaNames.LinkedIn, top: 605, left: 585 },
-  h: { id: 8, title: SocialMediaNames.DevTo, top: 23, left: 173 },
+  f: { id: 6, title: SocialMediaNames.VideoCard, top: 656, left: 37 },
+  g: { id: 7, title: SocialMediaNames.LinkedIn, top: 606, left: 576 },
+  h: { id: 8, title: SocialMediaNames.DevTo, top: 23, left: 186 },
 };
-
 export default function Container({ snapToGrid }: { snapToGrid: boolean }) {
   const [socialMediaBoxes, setSocialMediaBoxes] = useState<BoxMap>(
     initialSocialMediaBoxesState,
