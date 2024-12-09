@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { clsx } from "clsx";
-import { RxDragHandleDots2 } from "react-icons/rx";
+import DragIcon from "@/app/components/DragAndDrop/DragIcon";
 
 type CardProps = {
   children: ReactNode;
@@ -15,13 +15,11 @@ export default function Card({ children, className }: CardProps) {
       className={clsx(
         className,
         reverseRotate ? "hover:rotate-[-2deg]" : "hover:rotate-[2deg]",
-        "group relative flex h-fit flex-col items-start gap-2 rounded-xl p-2 shadow-md outline-2 outline-neutral-100 drop-shadow-sm filter transition-all duration-200 hover:outline-neutral-200",
+        "group relative flex h-fit flex-col items-start gap-2 rounded-xl border border-neutral-100 p-2 shadow-md outline-none drop-shadow-sm filter transition-all duration-200 hover:border-neutral-200 active:border-white",
       )}
     >
-      <div className="absolute bottom-0 right-0 rotate-45 transform cursor-grab p-2 text-white opacity-0 filter transition active:cursor-grabbing group-hover:opacity-100">
-        <RxDragHandleDots2 />
-      </div>
       {children}
+      <DragIcon />
     </div>
   );
 }
