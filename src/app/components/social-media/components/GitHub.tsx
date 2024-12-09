@@ -31,22 +31,19 @@ export default function GitHub() {
       <CardLogo className="bg-neutral-900">
         <GithubIcon />
       </CardLogo>
-      <div className="overflow-x-clip [&>*]:text-xs">
-        <GitHubCalendar
-          username="mrLuisFer"
-          year={currentYear}
-          throwOnError
-          blockSize={isTabletOrLess ? 20 : 15}
-          errorMessage="Could not load GitHub activity"
-          colorScheme="dark"
-          transformData={getTransformedData}
-          hideColorLegend
-          hideMonthLabels={!isTabletOrLess}
-          hideTotalCount={!isTabletOrLess}
-        />
-      </div>
+      <GitHubCalendar
+        username="mrLuisFer"
+        year={currentYear}
+        throwOnError
+        blockSize={isTabletOrLess ? 20 : 15}
+        errorMessage="Could not load GitHub activity"
+        colorScheme="dark"
+        transformData={getTransformedData}
+        hideColorLegend
+        hideTotalCount={!isTabletOrLess}
+      />
       <Link href={SocialMediaLinks.GitHub} withButton>
-        Follow
+        Seguirme o explorar mis repositorios
       </Link>
     </Card>
   );

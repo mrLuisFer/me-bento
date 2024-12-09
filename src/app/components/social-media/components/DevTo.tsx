@@ -15,7 +15,7 @@ export default function DevTo() {
       <Img
         src={devToProfile}
         alt="Luis Alvarez Dev.to Profile"
-        className="w-[430px] lg:w-full"
+        className="w-[350px] md:w-[430px] lg:w-full"
       />
       <Link
         withButton

@@ -21,8 +21,6 @@ export const socialMediaComponents = {
     <VideoCard
       src="https://www.youtube.com/embed/rR4n-0KYeKQ?si=zuuDPVVcnqBtyJXa"
       title="Cómo escribimos/revisamos código en grandes empresas de tecnología"
-      height={280}
-      width={440}
     />
   ),
   [SocialMediaNames.LinkedIn]: <LinkedIn />,

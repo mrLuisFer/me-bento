@@ -22,27 +22,29 @@ export default function Link({
   const Container = withButton ? Button : Fragment;
 
   return (
-    <Container
-      {...(withButton
-        ? {
-            asChild: true,
-            ...buttonProps,
-            className: clsx(
-              className,
-              buttonProps?.className,
-              "text-wrap text-sm filter transition-all active:scale-95",
-            ),
-          }
-        : {})}
-    >
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href={href}
-        className={linkClassName}
+    <div className="flex w-full justify-center md:justify-start lg:block lg:w-fit">
+      <Container
+        {...(withButton
+          ? {
+              asChild: true,
+              ...buttonProps,
+              className: clsx(
+                className,
+                buttonProps?.className,
+                "text-wrap text-sm filter transition-all active:scale-95",
+              ),
+            }
+          : {})}
       >
-        {children}
-      </a>
-    </Container>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={href}
+          className={linkClassName}
+        >
+          {children}
+        </a>
+      </Container>
+    </div>
   );
 }
