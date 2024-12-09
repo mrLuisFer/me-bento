@@ -1,16 +1,22 @@
-import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { ReactNode } from "react";
 
-export default function TinyTooltip() {
+type TinyTooltipProps = {
+  children: ReactNode;
+  content: string | ReactNode;
+};
+
+export default function TinyTooltip({ children, content }: TinyTooltipProps) {
   return (
     <TooltipProvider delayDuration={0}>
       <Tooltip>
-        <TooltipTrigger asChild>
-          <Button variant="outline" size="sm">
-            Tiny
-          </Button>
-        </TooltipTrigger>
-        <TooltipContent className="px-2 py-1 text-xs">This is a simple tooltip</TooltipContent>
+        <TooltipTrigger asChild>{children}</TooltipTrigger>
+        <TooltipContent className="px-2 py-1 text-xs">{content}</TooltipContent>
       </Tooltip>
     </TooltipProvider>
   );
